@@ -1,0 +1,190 @@
+html {
+  background-color: #171717;
+  color: white;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.header {
+  background-image: url(./assets/yusrbg.jpg); 
+  background-size: cover;
+  height: 750px;
+
+}
+
+.gradient {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+ 
+}
+
+.nav-right {
+ margin-top: 0.95em;
+}
+
+.hamburger {
+  background-color: #4c64e9;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px;
+}
+
+#main-title {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: right;
+  margin-top: 170px;
+  margin-right: 10%;
+}
+
+#subtitle {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10%;
+}
+
+#main-button {
+  background-color: #4c64e9;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10%;
+  float: right;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+
+.close-nav {
+  background-color: transparent;
+  border-radius: 100px;
+  color: #4c64e9;
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#first-li-element {
+margin-top: 4px;
+padding-top: 5%;
+}
+
+
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding: 6.5px 13px;
+  text-decoration: none;
+  margin: 4px;
+}
+
+
+.contact-us-content{
+  text-align: center;
+  align-items: center;
+}
+
+.contact-us-title  {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.contact-us-subtitle {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 540;
+  margin-top: 8px;
+  padding: 5px;
+}
+
+.telegram-send {
+  display: flex;
+  justify-content: center;
+  border: #fff solid 1px;
+  width: 25%;
+  padding: 2px;
+  /* make the button glow */
+  box-shadow: 0 0 5px #d1d4e2;
+  margin: 0 auto;
+}
+
+.telegram-icon {
+  padding: 0px 10px 0px 5px;; 
+}
+
+.footer {
+  background-color: #fff;
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* make it responsive for small screens */
+@media screen and (max-width: 870px) {
+  .header {
+    height: 500px;
+  }
+  .telegram-send {
+    width: 50%;
+  }
+
+ .footer {
+  font-size: 12px;
+ }
+}
