@@ -1,28 +1,38 @@
 import NavBar from './components/NavBar';
+import Universities from './components/Universities';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import { useState } from 'react';
+import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
+
+import Home from './components/Home';
+import Subjects from './components/Subjects';
 import './App.css';
 
 function App() {
 
-  //
+  const [showUniversity, setShowUniversity] = useState(false);
+
   return (
-    <div className='main-container'>
-      <div className='header'> 
-      <div className= 'gradient'> 
-      <NavBar />
+    <BrowserRouter>
+      <div className='main-container'>
+          <div className='gradient'>
+            <NavBar />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/universities' element={<Universities />} />
+              <Route path='/universities/subjects' element={<Subjects />} />
 
-      <div className='header-content'>
-        <h1 id='main-title'> موقع يُسر التعليمي </h1>
-        <section id='subtitle'> ..تسريبات، ملخصات، دروس، شروحات </section>
-        <button className='button' id='main-button'> اختر الجامعة </button>
 
+            </Routes>
         </div>
-      </div>
-      </div>
-      <ContactUs />
+
+        <ContactUs />
+
       <Footer />
-    </div>
+      </div>
+
+    </BrowserRouter>
   );
 }
 

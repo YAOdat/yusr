@@ -4,7 +4,7 @@ html {
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  
+
 }
 
 body {
@@ -12,6 +12,10 @@ body {
   padding: 0;
 }
 
+.main-container {
+  height: 100%;
+  width: 100%;
+}
 
 h1 {
   font-family: Roboto, sans-serif;
@@ -20,14 +24,14 @@ h1 {
 }
 
 .header {
-  background-image: url(./assets/yusrbg.jpg); 
+  height: 700px;
+  background-image: url(./assets/yusrbg.jpg);
   background-size: cover;
-  height: 750px;
 
 }
 
 .gradient {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.705));
   height: 100%;
 }
 
@@ -35,11 +39,13 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding-left: 1.5rem;
- 
+
 }
 
 .nav-right {
- margin-top: 0.95em;
+  margin-top: 1.25em;
+  margin-right: 9px;
+
 }
 
 .hamburger {
@@ -50,12 +56,16 @@ h1 {
   padding: 10px;
 }
 
+.hamburger:hover {
+  background-color: #2b3b80;
+  cursor: pointer;
+}
+
 #main-title {
   font-family: Roboto, sans-serif;
   font-size: 2rem;
   font-weight: 900;
   text-align: right;
-  margin-top: 170px;
   margin-right: 10%;
 }
 
@@ -80,7 +90,19 @@ h1 {
   margin-top: 20px;
   margin-right: 10%;
   float: right;
+}
 
+#main-button:hover {
+  background-color: #2b3b80;
+  cursor: pointer;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 ul {
@@ -88,11 +110,11 @@ ul {
   margin: 0;
   padding: 0;
   background-color: black;
-  position:absolute;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  left:0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .close-nav {
@@ -105,9 +127,14 @@ ul {
   margin-top: 10px;
 }
 
+.close-nav:hover {
+  background-color: #2b3b80;
+  cursor: pointer;
+}
+
 #first-li-element {
-margin-top: 4px;
-padding-top: 5%;
+  margin-top: 4px;
+  padding-top: 5%;
 }
 
 
@@ -124,13 +151,71 @@ a {
   margin: 4px;
 }
 
-
-.contact-us-content{
-  text-align: center;
-  align-items: center;
+.universities-content {
+margin-bottom: 59px;
+  justify-content: end;
 }
 
-.contact-us-title  {
+.universities-title {
+  font-family: Roboto, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  background-color: #111111ea;
+  width: 50%;
+  margin: auto;
+  border-radius: 0.8rem
+}
+
+.universities-list {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 1rem;  
+background-color: #171717;
+ 
+}
+
+.university {
+
+  text-align: center;
+
+}
+
+.university:hover {
+  cursor: pointer;
+  transform: rotate(3deg);
+  transition: transform 0.5s;
+}
+
+.uni-name {
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: auto;
+}
+
+.contact-us {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  height: 55vh;
+
+
+}
+
+.contact-us-content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.contact-us-title {
   font-family: Roboto, sans-serif;
   font-size: 2rem;
   font-weight: 900;
@@ -148,43 +233,63 @@ a {
   display: flex;
   justify-content: center;
   border: #fff solid 1px;
-  width: 25%;
+  width: 35%;
   padding: 2px;
-  /* make the button glow */
   box-shadow: 0 0 5px #d1d4e2;
   margin: 0 auto;
+  cursor: pointer;
 }
 
+
 .telegram-icon {
-  padding: 0px 10px 0px 5px;; 
+  padding: 0px 10px 0px 5px;
+  ;
 }
 
 .footer {
-  background-color: #fff;
-  color: #171717;
+  flex-shrink: 0;
   width: 100%;
+  background-color: #fff;
+  color: #181818;
   text-align: center;
-  height: 100%;
-  margin-top: 20px;
   font-size: 15px;
+  margin-top: 20px;
+
+
 }
 
 .footer-content {
-  display: flex;
+
   justify-content: space-between;
   padding: 10px;
 }
 
-/* make it responsive for small screens */
-@media screen and (max-width: 870px) {
+
+
+@media screen and (max-width: 800px) {
   .header {
     height: 500px;
   }
+
   .telegram-send {
     width: 50%;
   }
 
- .footer {
-  font-size: 12px;
- }
+  
+.universities-list {
+  grid-template-columns: repeat(2, 1fr);
+   
+  }
+
+  .uni-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    font-size: 12px;
+  }
 }

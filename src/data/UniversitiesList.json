@@ -1,0 +1,68 @@
+{
+    
+    "unis":[
+    
+    {
+        "id": 0,
+        "name":"جامعة الملك عبدالعزيز",
+        "logo":"https://i.ibb.co/gw3GKDF/KAU.png"
+    },
+
+    {
+        "id": 1,
+        "name":"جامعة الملك سعود",
+        "logo":"https://i.ibb.co/t3yWJg1/KSU.png"
+
+    },
+
+   {
+        "id": 2,
+        "name":"جامعة القصيم",
+        "logo":"https://i.ibb.co/Df9fSc6/QA.png"
+
+    },
+    {
+        "id": 3,
+        "name":"جامعة تبوك",
+        "logo":"https://i.ibb.co/yhTSVLG/TU.jpg"
+
+    },
+    {
+        "id": 4,
+        "name":"جامعة الإمام محمد بن سعود",
+        "logo":"https://i.ibb.co/F3FC6fN/IMAM.png"
+
+    },
+    {
+        "id": 5,
+        "name":"جامعة أم القرى",
+        "logo":"https://i.ibb.co/XpKNCH9/UQU.png"
+
+    }
+
+],
+
+"subjects": [
+    {
+        "id": 0,
+        "name": "الرياضيات"
+    },
+    {
+        "id": 1,
+        "name": "اللغة الإنجليزية"
+
+    },
+    {
+        "id": 2,
+        "name": "الفيزياء"
+    },
+    {
+        "id": 3,
+        "name": "البرمجة"
+    }
+
+    
+]
+    }
+
+    

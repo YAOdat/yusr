@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const [show, setShow] = useState(false);
@@ -17,9 +18,9 @@ const NavBar = () => {
           <ul>
       <AiFillCloseCircle className='close-nav' size='35px' onClick={() => setShow(!show)}/>
 
-            <li id="first-li-element"><a href='#'> الرئيسية </a></li>
-            <li><a href='#'> الجامعات </a></li>
-            <li><a href='#'> تبرع </a></li>
+            <Link to= {'/'}> <li id="first-li-element"><a href='#'> الرئيسية </a></li> </Link>
+            <Link to={'/universities'}> <li><a href='#'> الجامعات </a></li> </Link>
+            {/* <li><a href='#'> تبرع </a></li> */}
             <li><a href='#'> عن الموقع </a></li>
           </ul>
           }
