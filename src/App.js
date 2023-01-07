@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar';
 import Universities from './components/Universities';
+import English from './components/English';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import { useState } from 'react';
@@ -22,6 +23,7 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/universities' element={<Universities />} />
               <Route path='/universities/subjects' element={<Subjects />} />
+              <Route path='/universities/subjects/english' element={<English />} />
 
 
             </Routes>

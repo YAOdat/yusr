@@ -4,7 +4,7 @@
     
     {
         "id": 0,
-        "name":"جامعة الملك عبدالعزيز",
+        "name":"جامعة الملك عبد العزيز",
         "logo":"https://i.ibb.co/gw3GKDF/KAU.png"
     },
 
@@ -45,24 +45,170 @@
 "subjects": [
     {
         "id": 0,
-        "name": "الرياضيات"
+        "name": "الرياضيات",
+        "route":"maths",
+        "logo":"https://i.ibb.co/4Kks4jL/maths.png"
+
     },
     {
         "id": 1,
-        "name": "اللغة الإنجليزية"
+        "name": "اللغة الإنجليزية",
+        "route":"english",
+        "logo":"https://i.ibb.co/SfMdy4R/English.png"
+
 
     },
     {
         "id": 2,
-        "name": "الفيزياء"
+        "name": "الفيزياء",
+        "route":"physics",
+        "logo":"https://i.ibb.co/g4r4WGD/gravity.png"
+
     },
     {
         "id": 3,
-        "name": "البرمجة"
+        "name": "البرمجة",
+        "route":"programming",
+        "logo":"https://i.ibb.co/3rFBH2m/programming.png"
     }
 
     
-]
+],
+
+"data": [
+    {
+        "id": 0,
+        "level": 1,
+        "branch":"علمي",
+        "books":"https://t.me/KAUEnglish/96",
+        "leaks":"",
+        "notes":"https://t.me/ProgressQuiz/286",
+        "quizzes": [
+            {
+                "id": 0,
+                "unit": "Unit 1",
+                "listening":"",
+                "reading":""
+            },
+            {
+                "id": 1,
+                "unit": "Unit 2",
+                "listening":"",
+                "reading":""
+            },
+            {
+                "id": 2,
+                "unit": "Unit 3",
+                "listening":"",
+                "reading":""
+            },
+            {
+                "id": 3,
+                "unit": "Unit 4",
+                "listening":"",
+                "reading":""
+            },
+            {
+                "id": 4,
+                "unit": "Unit 5",
+                "listening":"https://t.me/ProgressQuiz/254",
+                "reading":""
+            },
+            {
+                "id": 5,
+                "unit": "Unit 6",
+                "listening":"https://t.me/ProgressQuiz/229",
+                "reading":""
+
+            }
+         
+        ]
+    },
+
+    {
+        "id": 1,
+        "level": 2,
+        "branch":"علمي",
+        "books":"https://t.me/KAUEnglish/116",
+        "leaks":"",
+        "notes":"",
+        "v": [
+            {
+                "id": 0,
+                "unit": "الوحدة الأولى",
+                "listening":"https://t.me/ProgressQuiz/307",
+                "reading":"https://t.me/ProgressQuiz/336"
+            },
+            {
+                "id": 1,
+                "unit": "الوحدة الثانية",
+                "listening":"https://t.me/ProgressQuiz/356",
+                "reading":"https://t.me/ProgressQuiz/356"
+            },
+            {
+                "id": 2,
+                "unit": "الوحدة الثالثة",
+                "listening":"https://t.me/ProgressQuiz/357",
+                "reading":"https://t.me/ProgressQuiz/357"
+            },
+            {
+                "id": 3,
+                "unit": "الوحدة الرابعة",
+                "listening":"https://t.me/ProgressQuiz/358",
+                "reading":"https://t.me/ProgressQuiz/358"
+            },
+            {
+                "id": 4,
+                "unit": "الوحدة السادسة",
+                "listening":"",
+                "reading":""
+
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "level": 3,
+        "branch":"علمي",
+        "books":"https://t.me/KAUEnglish/116",
+        "leaks":"",
+        "notes":"https://t.me/ProgressQuiz/287",
+        "quizzes": [
+            {
+                "id": 0,
+                "unit": "الوحدة الأولى",
+                "listening":"https://t.me/ProgressQuiz/180",
+                "reading":"https://t.me/ProgressQuiz/91"
+            },
+            {
+                "id": 1,
+                "unit": "الوحدة الثانية",
+                "listening":"https://t.me/ProgressQuiz/137",
+                "reading":"https://t.me/ProgressQuiz/107"
+            },
+            {
+                "id": 2,
+                "unit": "الوحدة الثالثة",
+                "listening":"https://t.me/ProgressQuiz/45",
+                "reading":"https://t.me/ProgressQuiz/156"
+            },
+            {
+                "id": 3,
+                "unit": "الوحدة الرابعة",
+                "listening":"https://t.me/ProgressQuiz/53",
+                "reading":""
+            },
+            {
+                "id": 4,
+                "unit": "الوحدة الخامسة",
+                "listening":"https://t.me/ProgressQuiz/74",
+                "reading":"https://t.me/ProgressQuiz/198"
+
+            }
+        ]
+    }
+  
+  ]
     }
 
-    

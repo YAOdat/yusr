@@ -1,9 +1,13 @@
-import kauLogo from '../assets/KAU.png'
 import UniNames from '../data/UniversitiesList.json'
-import Footer from './Footer';
 import { Link } from "react-router-dom";
 
 export default function Universities() {
+
+    function handleClick(event, uni) {
+        localStorage.setItem('university', uni.name);
+        window.location.assign('/universities/subjects');
+      }
+      
     return (
         <div className='uni-container'>
             <div className='universities-content'>
@@ -11,10 +15,11 @@ export default function Universities() {
                 <div className='universities-list'>
                         {UniNames.unis.map((uni, index) => {
                             return ( 
-                            <Link to={'/universities/subjects'} className='university' key={uni.id}> 
+                            <button to={'/universities/subjects'} className='university' key={uni.id} onClick={(event) => handleClick(event, uni)}
+                            > 
                                 <img src={uni.logo} alt='KAU' width='90px' height='85px'  />
                                 <p className='uni-name'> {uni.name} </p>
-                            </Link>
+                            </button>
                             )
 
                         })}
