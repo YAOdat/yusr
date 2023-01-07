@@ -25,10 +25,10 @@ export default function Footer() {
             <div className='footer-content'>
                 <h3> جميع الحقوق محفوظة </h3>
                 <h3>تصميم ياسر عودات</h3>
-                <BsLinkedin size='16px' onClick={newWindowLI}  />
-                <BsYoutube size='16px' onClick={newWindowYT}/>
-                <BsTelegram size='16px' onClick={newWindow}/>
-                <IoLogoWhatsapp size='16px' onClick={waNewWindow}/>
+                <BsLinkedin size='17px' onClick={newWindowLI} className='footer-icons' title="Feel free to connect with me on Linkedin"/>
+                <BsYoutube size='17px' onClick={newWindowYT} className='footer-icons'/>
+                <BsTelegram size='17px' onClick={newWindow} className='footer-icons'/>
+                <IoLogoWhatsapp size='17px' onClick={waNewWindow} className='footer-icons'/>
 
                 <h3> ©2022 موقع يُسر التعليمي </h3>
 

@@ -92,6 +92,30 @@ h1 {
   float: right;
 }
 
+.alert-button{
+  background-color: #4c64e9;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.swal-overlay {
+  background-color: rgba(30, 31, 30, 0.733);
+}
+
+.swal-text {
+  background-color: #FEFAE3;
+  padding: 17px;
+  border: 1px solid #F0E1A1;
+  display: block;
+  margin: 22px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #61534e;
+}
+
 #main-button:hover {
   background-color: #2b3b80;
   cursor: pointer;
@@ -164,6 +188,7 @@ margin-bottom: 59px;
   background-color: #111111ea;
   width: 50%;
   margin: auto;
+  margin-bottom: 12px;
   border-radius: 0.8rem
 }
 
@@ -176,13 +201,14 @@ background-color: #171717;
 }
 
 .university {
-
+  background-color: transparent;
+  border: none;
+  color: white;
   text-align: center;
 
 }
 
 .university:hover {
-  cursor: pointer;
   transform: rotate(3deg);
   transition: transform 0.5s;
 }
@@ -194,12 +220,113 @@ background-color: #171717;
   margin: auto;
 }
 
+.subjects {
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 1rem;  
+background-color: #171717;
+}
+
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(179, 176, 176);
+  border-radius: 50%;
+  outline: none;
+  box-shadow: none;
+}
+
+label {
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  margin-right: 4px;
+}
+
+input[type="radio"]:checked {
+  background: #333;
+}
+
+input[type="radio"] {
+  transition: background-color 0.2s ease-in-out;
+}
+
+input[type="radio"]:checked {
+  background: #4c64e9;
+}
+
+.english {
+justify-content: center;
+text-align: center;
+height: 50rem;
+}
+
+.english-content {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 1rem;
+}
+
+.english-content a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.english-content a p{
+  margin: 0;
+  margin-top: 0.2em;
+}
+
+.english-content a:nth-child(4) {
+  margin-top: 0.4em
+}
+
+.progress-quizzes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+}
+.progress-quizzes-unit {
+  border: #4c64e9 solid 2px;
+  box-shadow: 0 0 9px #2a46e7;
+  width: 55%;
+  margin: 2.2px;
+}
+.level-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.level-buttons button {
+  background-color: #4c64e9;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
 .contact-us {
   position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
   text-align: center;
+  margin-bottom: 20px;
   margin-top: 20px;
   height: 55vh;
 
@@ -252,7 +379,6 @@ background-color: #171717;
   background-color: #fff;
   color: #181818;
   text-align: center;
-  font-size: 15px;
   margin-top: 20px;
 
 
@@ -262,6 +388,16 @@ background-color: #171717;
 
   justify-content: space-between;
   padding: 10px;
+  font-size: 15px;
+
+}
+
+.footer-icons {
+  margin-right: 2.2px;
+  padding: 1px;
+  cursor: pointer;
+
+
 }
 
 
@@ -286,6 +422,16 @@ background-color: #171717;
     font-size: 0.9rem;
     letter-spacing: 0.2px;
   }
+
+  .subjects {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .level-buttons {
+    flex-direction: column;
+  } 
+
 
   .footer {
     position: relative;
