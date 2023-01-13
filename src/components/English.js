@@ -10,6 +10,9 @@ export default function English() {
   const [level, setLevel] = useState(0);
   const [link, setLink] = useState('');
   const [show, setShow] = useState(false);
+  const [resourceType, setResourceType] = useState('');
+
+
 
   const handleRadioClick = (event) => {
     setBranch(event.target.value);
@@ -33,17 +36,21 @@ export default function English() {
   }
 
   const getBooks = () => {
-    if (branch === 'علمي') {
-      setLink(UniNames.data[level - 1].books)
-    }
+    setResourceType('books')
+    // if (branch === 'علمي') {
+    //   setLink(UniNames.data[level - 1].books)
+      console.log(resourceType)
+    // }
     window.open(link, '_blank');
 
   }
 
   const getNotes = () => {
-    if (branch === 'علمي') {
-      setLink(UniNames.data[level - 1].notes)
-    }
+    setResourceType('notes')
+    // if (branch === 'علمي') {
+    //   setLink(UniNames.data[level - 1].notes)
+    // }
+    console.log(resourceType)
     window.open(link, '_blank');
   }
 
@@ -51,10 +58,16 @@ export default function English() {
     setShow(!show);
   }
 
-
   useEffect(() => {
     if (level !== 0) setLink(UniNames.data[level - 1].books)
-  }, [branch, level]);
+    if(UniNames.data[level - 1] && UniNames.data[level - 1][resourceType]){
+      if(resourceType === 'books') setLink(UniNames.data[level - 1].books)
+      if(resourceType === 'notes') setLink(UniNames.data[level - 1].notes)
+
+ }
+
+
+  }, [branch, level, resourceType]);
 
   return (
     <div className='english'>
