@@ -132,7 +132,7 @@
         "books":"https://t.me/KAUEnglish/116",
         "leaks":"",
         "notes":"",
-        "v": [
+        "quizzes": [
             {
                 "id": 0,
                 "unit": "الوحدة الأولى",
@@ -160,8 +160,8 @@
             {
                 "id": 4,
                 "unit": "الوحدة السادسة",
-                "listening":"",
-                "reading":""
+                "listening":"https://t.me/ProgressQuiz/361",
+                "reading":"https://t.me/ProgressQuiz/361"
 
             }
         ]
