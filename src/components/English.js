@@ -8,9 +8,7 @@ export default function English() {
   const uni = localStorage.getItem('university');
   const [branch, setBranch] = useState('');
   const [level, setLevel] = useState(0);
-  const [link, setLink] = useState('');
   const [show, setShow] = useState(false);
-  const [resourceType, setResourceType] = useState('');
 
 
 
@@ -36,38 +34,21 @@ export default function English() {
   }
 
   const getBooks = () => {
-    setResourceType('books')
-    // if (branch === 'علمي') {
-    //   setLink(UniNames.data[level - 1].books)
-      console.log(resourceType)
-    // }
-    window.open(link, '_blank');
+    if (branch === 'علمي') {
+      window.open(UniNames.data[level - 1].books, '_blank');
+     }
 
   }
 
   const getNotes = () => {
-    setResourceType('notes')
-    // if (branch === 'علمي') {
-    //   setLink(UniNames.data[level - 1].notes)
-    // }
-    console.log(resourceType)
-    window.open(link, '_blank');
+    if (branch === 'علمي') {
+      window.open(UniNames.data[level - 1].notes, '_blank');
+    }
   }
 
   const showProgressQuizzes = () => {
     setShow(!show);
   }
-
-  useEffect(() => {
-    if (level !== 0) setLink(UniNames.data[level - 1].books)
-    if(UniNames.data[level - 1] && UniNames.data[level - 1][resourceType]){
-      if(resourceType === 'books') setLink(UniNames.data[level - 1].books)
-      if(resourceType === 'notes') setLink(UniNames.data[level - 1].notes)
-
- }
-
-
-  }, [branch, level, resourceType]);
 
   return (
     <div className='english'>

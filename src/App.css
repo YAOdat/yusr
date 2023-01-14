@@ -261,7 +261,9 @@ input[type="radio"]:checked {
 .english {
 justify-content: center;
 text-align: center;
-height: 50rem;
+height: fit-content;
+
+margin-bottom: 10px;
 }
 
 .english-content {
@@ -293,6 +295,7 @@ grid-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  text-align: center;
 
 }
 .progress-quizzes-unit {
@@ -319,6 +322,19 @@ grid-gap: 1rem;
   margin: 10px;
   cursor: pointer;
 }
+
+
+.no-data {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
 
 .contact-us {
   position: relative;
@@ -428,6 +444,9 @@ grid-gap: 1rem;
 
   }
 
+  .english {
+    height: fit-content;
+  }
   .level-buttons {
     flex-direction: column;
   } 
