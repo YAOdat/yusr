@@ -11,7 +11,9 @@ const NavBar = () => {
   return (
     <nav className='navbar'>
       <div className='nav-left'>
+        <a href="https://yusr.netlify.app/"> 
         <h1> يُسر </h1>
+        </a>
       </div>
       <div className='nav-right'>
         <GiHamburgerMenu className='hamburger' size='20px' onClick={() => setShow(!show)} />

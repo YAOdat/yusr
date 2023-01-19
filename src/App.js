@@ -5,12 +5,19 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import { useState } from 'react';
 import { BrowserRouter, Navigate, Routes, Route } from 'react-router-dom';
-
 import Home from './components/Home';
 import Subjects from './components/Subjects';
+// import ReactGA from 'react-analytics';
 import './App.css';
 
 function App() {
+  // ReactGA.initialize('G-R1K3ET5326');
+  // ReactGA.pageview(window.location.pathname + window.location.search);
+  // ReactGA.event({
+  //   category: 'Button',
+  //   action: 'Click',
+  //   label: 'Sign Up'
+  // });
 
   const [showUniversity, setShowUniversity] = useState(false);
 
